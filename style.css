@@ -24,6 +24,7 @@ main{
     height: 380px;
     background-color:hsl(244, 38%, 16%);
     display: flex;
+    border-radius: 10px;
 }
 
 .text{
@@ -88,6 +89,8 @@ main{
     height: 100%;
     background-image: linear-gradient(to bottom,hsl(277, 64%, 61%, 0.4),  hsl(277, 64%, 61%, 0.4)), url(images/image-header-desktop.jpg);
     background-size: 100% 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
@@ -156,13 +159,70 @@ a{
 
     .image{
         width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to bottom,hsl(277, 64%, 61%, 0.4),  hsl(277, 64%, 61%, 0.4)), url(images/image-header-desktop.jpg);
-        background-size: 100% 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
     }
     
     .attribution{
         margin-bottom: 80px;
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .container{
+        width: 90vw;
+        height: 900px;
+    }
+
+    .text{
+        height: 70%;
+        padding: 30px;
+    }
+
+    .image{
+        height: 30%;
+        background-image: linear-gradient(to bottom,hsl(277, 64%, 61%, 0.4),  hsl(277, 64%, 61%, 0.4)), url(images/image-header-mobile.jpg);
+    }
+
+    .tit{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-right: 0;
+    }
+    
+    .title{
+        font-size: 30px;
+    }
+    
+    .des{
+        margin-bottom:50px;
+    }
+    
+    .description{
+        padding: 5px;
+        text-align: center;
+        letter-spacing: 0.4px;
+        line-height: 22px;
+    }
+
+    .data{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ns{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .ns p{
+        font-size: 30px;
+    }
+    
+    .ns span{
+        font-size: 14px;
     }
 }
