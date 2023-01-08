@@ -5,3 +5,103 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 950px;
+    height: 380px;
+    background-color:hsl(244, 38%, 16%);
+    display: flex;
+}
+
+.text{
+    width: 55%;
+    height: 100%;
+    padding: 50px;
+}
+
+.tit{
+    margin-bottom: 20px;
+    padding-right: 50px;
+}
+
+.title{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.title span{
+    color: hsl(277, 64%, 61%);
+}
+
+.des{
+    padding-right: 60px;
+    margin-bottom:70px;
+}
+
+.description{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.data{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.ns{
+    width: 30%;
+}
+
+.ns p{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.ns span{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.image{
+    width: 45%;
+    height: 100%;
+    background-image: linear-gradient(to bottom,hsl(277, 64%, 61%, 0.4),  hsl(277, 64%, 61%, 0.4)), url(images/image-header-desktop.jpg);
+    background-size: 100% 100%;
+}
+
+.img{
+    width:100%;
+    height: 100%;
+}
+
+.attribution{
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%);
+    font-family:  'Inter', sans-serif;
+}
+
+a{
+    color: hsl(277, 64%, 61%);
+    text-decoration: none;
+}
